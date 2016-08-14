@@ -14,3 +14,4 @@ export const button = (props, children) => createElement('button', props, childr
 export const section = (props, children) => createElement('section', props, children);
 export const article = (props, children) => createElement('article', props, children);
 export const a = (props, children) => createElement('a', props, children);
+export const nav = (props, children) => createElement('nav', props, children);

@@ -6,7 +6,7 @@
     "react-scripts": "0.1.0"
   },
   "dependencies": {
-    "woof-dom": "^1.0.3"
+    "woof-dom": "^1.0.14"
   },
   "scripts": {
     "start": "react-scripts start",

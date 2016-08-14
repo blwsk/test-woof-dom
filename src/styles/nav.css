@@ -1,0 +1,20 @@
+:root {
+  --light-gray: rgba(20,120,220,0.13);
+  --light-gray-hover: rgba(20,120,220,0.07);
+  --light-gray-active: rgba(20,120,220,0.17);
+}
+
+nav a {
+  background: var(--light-gray);
+  margin-right: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background: var(--light-gray-hover);
+}
+
+nav a:active {
+  background: var(--light-gray-active);
+}

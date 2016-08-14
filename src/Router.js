@@ -2,7 +2,7 @@ import {Component, y} from 'woof-dom';
 import {div} from './Elements.js';
 import App from './components/App.js';
 import Home from './components/Home.js';
-import Posts from './components/Posts.js';
+import Items from './components/Items.js';
 
 class Router extends Component {
   constructor(props) {
@@ -37,8 +37,8 @@ class Router extends Component {
 
   renderChild() {
     switch (this.state.route) {
-      case '/posts':
-        return Posts();
+      case '/items':
+        return Items({navigateTo: this.navigateTo});
       default:
         return Home();
     }
