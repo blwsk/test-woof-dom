@@ -1,8 +1,10 @@
 import {Component, y} from 'woof-dom';
-import {div} from './Elements.js';
+import {Base} from 'woof-ui';
 import App from './components/App.js';
 import Home from './components/Home.js';
 import Items from './components/Items.js';
+
+const {div} = Base;
 
 class Router extends Component {
   constructor(props) {

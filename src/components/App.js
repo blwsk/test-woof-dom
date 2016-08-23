@@ -1,8 +1,8 @@
 import {Component, y} from 'woof-dom';
-import {div, a, h1, nav} from '../Elements.js';
+import {Base, Typography} from 'woof-ui';
 
-import '../styles/app.css';
-import '../styles/nav.css';
+const {div, span} = Base;
+const {h1} = Typography;
 
 class App extends Component {
   constructor(props) {
@@ -26,10 +26,10 @@ class App extends Component {
 
   renderNav() {
     return (
-      nav({className: 'nav'}, [
-        a({onClick: this.navigateToHome},
+      div({className: 'nav'}, [
+        span({onClick: this.navigateToHome},
           'Go home'),
-        a({onClick: this.navigateToItems},
+        span({onClick: this.navigateToItems},
           'Go to items')
       ])
     );

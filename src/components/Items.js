@@ -1,6 +1,8 @@
 import {Component, y} from 'woof-dom';
 import connect from '../state/connect.js';
-import {div} from '../Elements.js';
+import {Base, Typography} from 'woof-ui';
+
+const {div} = Base;
 
 class Items extends Component {
   shouldRender() {

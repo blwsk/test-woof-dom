@@ -1,7 +1,12 @@
-import {Component, y} from 'woof-dom';
-import {div, button, input} from '../Elements.js';
+import {Component, y, createElement} from 'woof-dom';
 import connect from '../state/connect.js';
 import {newItem} from '../state/ActionCreators.js';
+
+import {Base, Typography} from 'woof-ui';
+
+const {div, span} = Base;
+
+const input = (props, children) => createElement('input', props, children);
 
 class Home extends Component {
   constructor(props) {
@@ -48,7 +53,7 @@ class Home extends Component {
       div({}, [
         div({}, 'Home'),
         div({}, [
-          button({
+          span({
             onClick: this.handleClick
           }, 'Create new item'),
           input({
